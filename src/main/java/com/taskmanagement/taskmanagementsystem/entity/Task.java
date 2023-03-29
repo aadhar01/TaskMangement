@@ -4,9 +4,10 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
-@Entity
+
 @JsonIgnoreProperties
-@Table
+@Table(name = "tasks")
+@Entity
 public class Task {
     public Long getId() {
         return id;
